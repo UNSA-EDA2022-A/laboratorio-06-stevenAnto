@@ -31,7 +31,7 @@ public class Exercise1 {
 	if(n1.left!=null||n2.left!=null){
 	  verificador = isSame(n1.left,n2.left);
 	}
-	else if(n1.right!=null||n2.right!=null){
+	if(n1.right!=null||n2.right!=null){
 	  verificador = isSame(n1.right,n2.right);
 	}
 	else if(n1.right==null&&n2.right==null){
