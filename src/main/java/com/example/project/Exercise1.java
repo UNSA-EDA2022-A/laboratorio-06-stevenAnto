@@ -1,4 +1,4 @@
-//package com.example.project;
+package com.example.project;
 
 public class Exercise1 {
 
@@ -33,6 +33,9 @@ public class Exercise1 {
 	}
 	else if(n1.right!=null&&n2.right!=null){
 	  verificador = isSame(n1.right,n2.right);
+	}
+	else if(n1.right==null&&n2.right==null){
+	  verificador = true;
 	}
 	else{
 	  verificador= false;
