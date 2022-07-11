@@ -28,10 +28,10 @@ public class Exercise1 {
     public<E extends Comparable<E>> boolean isSame(Node<E> n1,Node<E> n2){
       boolean verificador=true;
       if((n1==null&&n2==null)||(n1!=null&&n2!=null)){
-	if(n1.left!=null&&n2.left!=null){
+	if(n1.left!=null||n2.left!=null){
 	  verificador = isSame(n1.left,n2.left);
 	}
-	else if(n1.right!=null&&n2.right!=null){
+	else if(n1.right!=null||n2.right!=null){
 	  verificador = isSame(n1.right,n2.right);
 	}
 	else if(n1.right==null&&n2.right==null){
